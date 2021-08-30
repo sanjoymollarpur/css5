@@ -39,6 +39,26 @@ body{
     animation: ss 1s linear infinite;
     background-repeat: repeat-x;
 }
+.sun{
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+    animation: sun1 600s linear infinite;
+}
+.flag{
+    height: 60px;
+    position: absolute;
+    top: 180px;
+    left: 600px;
+}
+@keyframes sun1 {
+    100%{
+        transform: translate(-1000px);
+    }
+}
 @keyframes ss {
     100%{
         transform: translateX(-1000px);
