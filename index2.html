@@ -1,30 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index1.css">
-</head>
-<body>
-    <div class="container">
-       <center><h1> <span style="background-color: rgb(204, 156, 0);">HAPPY</span> <span style="background-color: white;">INDEPENDENCE</span> <span style="background-color:  green;">DAY</span> </h1></center> 
-        <div class="city1">
-            <img src="./city.png" class="city-img c-img" alt="">
-        </div>
-        <div class="road1">
-            <img src="./road.jpg" class="road-img c-img" alt="">
-        </div>
-        <div class="car1">
-            <img src="./car.png" class="car-img" alt="">
-        </div>
-        <div class="wheel-1">
-            <img src="./wheel.png" class="wheel1" alt="">
-        </div>
-        <div class="wheel-2">
-            <img src="./wheel.png" class="wheel1" alt="">
-        </div>
-    </div>
-</body>
-</html>
+body{
+    background-image: url("./sky.jpg");
+    z-index: -1;
+}
+.city1{
+    margin-bottom: 0;
+}
+.car1{
+    position: absolute;
+    top: 220px;
+    left: 450px;
+    margin-top: 0;
+    
+}
+
+.car-img{
+    height: 200px;
+    width: 400px;
+}
+.road-img{
+    height: 380px;
+}
+.wheel-1{
+    position: absolute;
+    top: 326px;
+    left: 486px;
+}
+.wheel-2{
+    position: absolute;
+    top: 326px;
+    left: 731px;
+}
+.wheel1{
+    height: 70px;
+    animation: rr 1s linear infinite;
+}
+.c-img{
+    
+    animation: ss 1s linear infinite;
+    background-repeat: repeat-x;
+}
+.sun{
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+    animation: sun1 600s linear infinite;
+}
+.flag{
+    height: 60px;
+    position: absolute;
+    top: 180px;
+    left: 600px;
+}
+@keyframes sun1 {
+    100%{
+        transform: translate(-1000px);
+    }
+}
+@keyframes ss {
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+@keyframes rr {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
